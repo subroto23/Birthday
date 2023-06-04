@@ -68,6 +68,11 @@
         } else {
           result.innerHTML = `ধুর! শালা,অনুমান ঠিক কর। নাম্বারটি ছিলোঃ ${numRandom}`;
         }
+        clearValue();
+      }
+      function clearValue() {
+        const text = document.querySelector("#textVlue");
+        text.value = "";
       }
     </script>
   </head>

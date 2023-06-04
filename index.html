@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      */ {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #header {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      div input {
+        padding: 5px;
+        border-radius: 50px;
+        margin: 10px;
+      }
+      div button {
+        background-color: white;
+        border: 2px solid green;
+        border-radius: 50px;
+        color: blue;
+        padding: 2px 10px;
+        box-shadow: 1px 2px rgb(85, 84, 84);
+      }
+      div button:hover {
+        background-color: pink;
+        color: black;
+        border: none;
+      }
+
+      .main {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px rgb(104, 104, 104);
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0;
+      }
+    </style>
+    <script>
+      const btnSubmit = document.querySelector("#subButton");
+      function handleSubmit() {
+        let numRandom = parseInt(Math.random() * 20);
+        const wishingTemp = document.querySelector("#wishingTemp");
+        const text = Number(document.querySelector("#textVlue").value);
+        const result = document.querySelector("#resultdis");
+        const header = document.querySelector("#header");
+        if (numRandom === text) {
+          wishingTemp.style.display = "block";
+          result.style.display = "none";
+          header.style.display = "none";
+        } else {
+          result.innerHTML = `ধুর! শালা,অনুমান ঠিক কর। নাম্বারটি ছিলোঃ ${numRandom}`;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="main">
+        <p>০১ থেকে ২০ পর্যন্ত যেকোনো একটি সংখ্যা অনুমান করোঃ-</p>
+        <input type="number" name="" id="textVlue" required />
+        <button id="subButton" onclick="handleSubmit()">Submit</button>
+        <p style="color: red" id="resultdis"></p>
+      </div>
+    </div>
+    <div style="display: none" id="wishingTemp">
+      <div style="background-color: pink; color: white">
+        <div style="text-align: center">
+          <h1
+            style="
+              background-color: white;
+              color: skyblue;
+              display: inline-block;
+              border-radius: 7px;
+            "
+          >
+            <b>শুভ জন্মদিন রাণী</b>
+          </h1>
+        </div>
+        <p style="text-align: center">
+          <i
+            >তোমার নাম ছড়িয়ে পড়ুক জগৎজুড়ে,<br />
+            তোমার দ্বারা মানুষের উপকার হোক আকাশ সমান ,<br />
+            ব্যক্তিত্ব হোক সৎ এবং স্বচ্ছ ,<br />
+            আশীর্বাদ করি জীবনের প্রতিটি পদক্ষেপে সফল হও ।<br />
+            এই আশাই করি এবং তোমাকে জানাই শুভ জন্মদিনের অনেক অনেক শুভেচ্ছা ।</i
+          ><br />
+        </p>
+        <p>
+          সেই ছোটো থেকে তোমার সাথে আমার পরিচয়। তখন বুঝতেও পারিনি আমার জীবন,
+          আত্মা আর মনের অনেক অংশই চুরি করে নিবা।সালা চোর কোথাকার।অবশ্য ভালোই
+          করেছো।তুমি আমার মন চুরি না করলে জীবনটা নিরামিষ হয়ে থাকতো।তোমাকে
+          ভালোবাসাটাও বিরাট বড়ো mystery সাথে আছে কষ্টের history. তোমাকে
+          ভালোবেসেছিলাম স্বপ্নে তোমাকে অনুভব করে সেটা কবিতাতেও ব্যাক্ত করেছি।
+          মনে আছে সেই কবিতাটা রাণী?
+        </p>
+        <p style="color: black; text-align: right">
+          <b
+            ><i
+              >নিশ্চুপ তারাহীন গগনতলে ঝিঝি আলোরণ<br />
+              কৃষ্ণবাদলের অবগুণ্ঠনের আন্তরালে চন্দ্রিমার মৃদু কিরণ<br />
+              সময় মধ্যরাত্রি,<br />
+              পরিবার স্বপ্নযাত্রি,<br />
+              কি-জানি কোথায় আছি আমি<br />
+              অনুভবে অর্জিত পদতলে যেন অসীম অদৃশ্য জমি<br />
+              হঠাৎ সজোরে উঠল বুকটি কেঁপে <br />
+              কে যেন আসছে কৃষ্ণবাদলের বক্ষ চিড়ে<br />
+              নিদ্রিত অনুধ্যানে দৃশ্যমান এক অপরুপ ছায়া<br />
+              দৌর্বল্যের অগ্রশণে আসলো যেন মম কায়া<br />
+              সর্পের ন্যায় চাল্ <br />
+              তার বজ্রতুল্য চাহনি<br />
+              ঘন কালো বাদলের ন্যায় কেশটি তার <br />
+              মনোমুগ্ধকর সেই মুচকি হাসি<br />
+              পরিধানে তার কালো বর্ণের শাড়ি <br />
+              আসছিলো সে কালো অশ্বে চড়ে......<br /><br />
+
+              বেজে উঠল ঘুম ভাঙানোর সৈনিক <br />
+              ভোর ৫ টা থেকে ৭টা পর্যন্ত, <br />
+              বাজে সে দৈনিক<br />
+              বসলাম ব্যর্থ ঘুম থেকে উঠে<br />
+              ক্রধ তখনও সাত আসমান চরে<br />
+              দিলাম থামিয়ে স্বজোড়ে তার মাথার বোতাম চেপে<br />
+              ক্ষণকালের ব্যবধানে ক্রধও গেলো কমে<br />
+              অন্তরে ভাবতে লাগলাম <br />
+              পাবো কি কখনও তাকে?<br />
+              হৃদয়ে বললাম,<br />
+              আসবে কি কখনও তুমি আমার স্বপ্ন ঘিড়ে?<br />
+              আসবে কি কখনও তুমি কৃষ্ণ বাদল চিড়ে?</i
+            ></b
+          >
+        </p>
+
+        <p>
+          আসা করি মনে আছে।থাকবে না কেন? থাকতেই হবে।যাইহোক ভালোবাসার কথা মেলা
+          হলো।
+          <br />
+          এখন আসল কথাই আছি। আজ তোমার জন্মদিন। আজই তুমি Download হয়েছিলে। তোমার
+          মা যদি বলে তোকে হসপিটাল থেকে কুড়িয়ে এনেছিলাম বিশ্বাস করবা না। আসলে
+          তোমাকে Dustin থেকে কুড়িয়ে পেয়েছে। HAHA! sorry jokes a part...<br />
+          তুমি তোমার মায়েরই মেয়ে। কিন্তু আমি একটা থিওরি অনুমান করেছি তোমার মা
+          তুমি পেটে থাকা অবস্থায় কাটা মরিচ,রসূন, পেয়াজ খেত বেশি বেশি।কি ঝাঁজ
+          তোমার বাবা রে বাবা। মিষ্টি খেলে ভালো হতো এতো ঝাঁজ সমলানো লাগতো না।
+          AGAIN jokes a part তুমি আমার কাছপ খুবই special.তুমি যেতম আছো তেমনই
+          ভালো।<br />
+          কিন্তু রানী শুধু মন ভালো হলে পৃথিবীতে টিকে থাকা যায় না পৃথিবীতে
+          success হতে হলে সংগ্রাম করতে হয়। আমি চাই তুমি খুব পড়ো। তোমার স্বপ্ন
+          IELTS করে বিদেশে ভালো University তে গিয়ে পড়া তার জন্য তো এখন থেকেই খুব
+          ভালো করে পড়তে হবে তাই না? আমি চাই অন্তত দিনে ৬-৭ ঘন্টা পড়ো। আমি চাই আজ
+          থেকে জীবন গড়ার নতুন goal তৈরি করো তার মধ্যে একটা হোক ৬-৭ ঘন্টা পড়া।
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

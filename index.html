@@ -56,7 +56,7 @@
     <script>
       const btnSubmit = document.querySelector("#subButton");
       function handleSubmit() {
-        let numRandom = parseInt(Math.random() * 20);
+        let numRandom = parseInt(Math.random() * 40);
         const wishingTemp = document.querySelector("#wishingTemp");
         const text = Number(document.querySelector("#textVlue").value);
         const result = document.querySelector("#resultdis");
@@ -79,7 +79,7 @@
   <body>
     <div id="header">
       <div class="main">
-        <p>০১ থেকে ২০ পর্যন্ত যেকোনো একটি সংখ্যা অনুমান করোঃ-</p>
+        <p>০১ থেকে ৪০ পর্যন্ত যেকোনো একটি সংখ্যা অনুমান করোঃ-</p>
         <input type="number" name="" id="textVlue" required />
         <button id="subButton" onclick="handleSubmit()">Submit</button>
         <p style="color: red" id="resultdis"></p>
